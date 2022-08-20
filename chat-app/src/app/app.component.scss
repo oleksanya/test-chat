@@ -12,6 +12,8 @@
 }
 
 .chat-container { 
+    display: flex;
+    flex-direction: row;
     background-color: $white;
     width: 90%;
     height: 90%;

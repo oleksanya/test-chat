@@ -1,0 +1,37 @@
+@import '../../../variables';
+
+.dialog-wrapper {
+    border-bottom: 0.1rem solid $transparent-grey-1;
+    height: 4.125rem;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.dialog-user-profile {
+    margin-left: 0.5rem;
+}
+
+.dialog-message {
+    margin-top: 0.2rem;
+    flex-grow: 1;
+    margin-left: 1.5rem;
+}
+
+.dialog-name {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.dialog-text {
+    font-size: 0.8rem;
+}
+
+.dialog-time {
+    font-size: 0.8rem;
+    margin-right: 1rem;
+}
+
+.time {
+    
+}

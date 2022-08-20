@@ -1,0 +1,13 @@
+@import '../../../variables';
+
+.sidebar-wrapper {
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    width: 33.5vw;
+    height: 100%;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    border-right: 0.1rem solid $transparent-grey-1;
+    justify-content: space-between;
+}
