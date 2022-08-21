@@ -1,0 +1,31 @@
+@import '../../../variables';
+
+:host {
+    width: 67%;
+}
+
+.chat-wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-header { 
+    background-color: $white-2;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 0.1rem solid $transparent-grey-1;
+}
+
+.chat-name {
+    font-weight: 500;
+    margin-left: 1rem;
+}
+.chat-body {
+    flex-grow: 1;
+}
+
+.chat-footer {
+    flex-grow: 0;
+}

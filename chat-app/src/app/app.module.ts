@@ -10,6 +10,8 @@ import { DialogComponent } from './components/dialog/dialog.component';
 import { TypeMessageComponent } from './components/type-message/type-message.component';
 import { SidebarHeaderComponent } from './components/sidebar-header/sidebar-header.component';
 import { DialogListComponent } from './components/dialog-list/dialog-list.component';
+import { ChatComponent } from './components/chat/chat.component';
+import { MessageComponent } from './components/message/message.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { DialogListComponent } from './components/dialog-list/dialog-list.compon
     DialogComponent,
     TypeMessageComponent,
     SidebarHeaderComponent,
-    DialogListComponent
+    DialogListComponent,
+    ChatComponent,
+    MessageComponent
   ],
   imports: [
     BrowserModule,

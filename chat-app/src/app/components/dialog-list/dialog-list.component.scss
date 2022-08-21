@@ -7,9 +7,10 @@
 }
 
 .dialog-list-wrapper {
-    height: 30rem;
+    height: 100%;
     display: flex;
     flex-direction: column;
+    margin-top: 3rem;
 }
 
 .list-container {
