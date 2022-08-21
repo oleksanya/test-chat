@@ -1,0 +1,29 @@
+@import '../../../variables';
+
+
+.message-wrapper {
+    background-color: $grey-2;
+    border-top: 0.1rem solid $transparent-grey-1;
+    padding: 1.5rem 2rem;
+    position: relative;
+}
+
+.message-input { 
+    outline: none;
+    padding: 1rem;
+    border-radius: 1.1rem;
+    width: 90%;
+    border: 0.063rem solid $transparent-grey-1;
+}
+
+.send-icon {
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    font-size: 2rem;
+    color: $grey-1;
+    top: 0;
+    bottom: 0;
+    right: 12%;
+    margin: auto;
+}
