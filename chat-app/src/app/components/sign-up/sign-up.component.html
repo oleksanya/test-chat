@@ -1,0 +1,25 @@
+<div class="wrapper">
+  <div class="signUp-container">
+      <h3 class="signUp-header">Sign Up</h3>
+
+      <form [formGroup]="signUpForm" novalidate class="form">
+        <input formControlName="email" type="email" class="input-field" placeholder="Email Address" required />
+
+        <input formControlName="password" type="password" class="input-field" placeholder="Password" required />
+
+        <input type="button" class="btn btnPrimary" value="Sign Up" (click)="signUp()" />
+      </form>
+
+      <!-- Continue with Google -->
+      <div class="auth-container">
+        <button type="button" class="btn googleBtn" (click)="authGoogle()">
+          Continue with Google
+        </button>
+      </div>
+    </div>
+
+    <div class="redirectToLogin">
+      <span>Already have an account?
+        <span class="redirect" routerLink="/login">Log In</span></span>
+    </div>
+</div>

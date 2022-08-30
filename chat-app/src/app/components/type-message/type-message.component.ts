@@ -1,3 +1,4 @@
+import { ChatService } from './../../services/chat.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,10 +7,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./type-message.component.scss']
 })
 export class TypeMessageComponent implements OnInit {
+    message!: string;
 
-  constructor() { }
+  constructor(private chat: ChatService) { }
 
   ngOnInit(): void {
+  }
+  // message
+  // handleSumbit
+  send() {
+  }
+
+  handSubmit(event: { keyCode: number; }) {
+    if (event.keyCode === 13) {
+      this.send();
+    }
   }
 
 }
