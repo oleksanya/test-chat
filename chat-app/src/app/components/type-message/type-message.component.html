@@ -1,4 +1,8 @@
 <div class="message-wrapper ">
-    <input class="message-input" placeholder="Type your message"> 
-    <span class="material-symbols-outlined send-icon">send</span>
+    <input class="message-input"
+    [(ngModel)]="message"
+    (keydown)="handSubmit($event)"
+    placeholder="Type your message"/> 
+    <span class="material-symbols-outlined send-icon"
+        (click)="send()">send</span>
 </div>
