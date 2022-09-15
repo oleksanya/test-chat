@@ -1,13 +1,11 @@
 <div class="chat-wrapper">
-    <div class="chat-header">
-        <app-profile></app-profile>
+    <div class="chat-header"> 
+        <app-profile [userImg]="data.img"></app-profile>
 
-        <h2 class="chat-name">Josefina</h2>
+        <h2 class="chat-name">{{ data.firstName + ' ' + data.lastName}}</h2>
     </div>
 
     <div class="chat-body">
-        <app-message></app-message>
-
         <app-message></app-message>
     </div>
     

@@ -1,8 +1,8 @@
 <div class="header-wrapper">
     <div class="header-container">
-        <app-profile></app-profile>
+        <app-profile [userImg]="img"></app-profile>
         
-        <span class="material-symbols-outlined">
+        <span class="material-symbols-outlined logout-logo" (click)="signOut()">
             logout
         </span>
     </div>

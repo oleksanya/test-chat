@@ -1,21 +1,13 @@
-<div class="dialog-list-wrapper">
+<div class="dialog-list-wrapper" > 
     <h2 class="list-title">
         Chats
     </h2>
 
-    <div class="list-container">
-        <app-dialog></app-dialog>
-
-        <app-dialog></app-dialog>
-
-        <app-dialog></app-dialog>
-
-        <app-dialog></app-dialog>
-
-        <app-dialog></app-dialog>
-        
-        <app-dialog></app-dialog>
-
+    <div class="list-container" *ngIf="allUsers">
+        <app-dialog *ngFor="let user of allUsers"  
+            [chatData]="user" 
+            (dialogClicked)="catchEvent($event)">
+        </app-dialog>
     </div>
 
 </div>

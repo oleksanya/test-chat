@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { ChatDataService } from 'src/app/services/chat-data.service';
+import { Component, Input, OnInit } from '@angular/core';
+import { BehaviorSubject } from 'rxjs';
 
 @Component({
   selector: 'app-chat',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChatComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit(): void {
+  @Input() data: any;
+    
+  constructor( private chatData: ChatDataService ) { 
+    
   }
 
+  ngOnInit() {
+    this.data.subscribe((chatInfo: any) => {
+      this.data = chatInfo;
+    });
+  }
 }
