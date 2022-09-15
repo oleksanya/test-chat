@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { AuthService } from 'src/app/services/auth.service';
 
 @Component({
@@ -13,6 +13,5 @@ export class ProfileComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  userImg = JSON.parse(localStorage.getItem('user')!).photoURL; 
-
+  @Input() userImg!: string;
 }

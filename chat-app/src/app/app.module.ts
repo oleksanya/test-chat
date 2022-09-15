@@ -1,3 +1,4 @@
+import { environment } from './../environments/environment.prod';
 
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
@@ -25,7 +26,6 @@ import { DialogListComponent } from './components/dialog-list/dialog-list.compon
 import { ChatComponent } from './components/chat/chat.component';
 import { MessageComponent } from './components/message/message.component';
 import { LoginFormComponent } from './components/login-form/login-form.component';
-import { environment } from '../environments/environment';
 import { ChatWrapperComponent } from './components/chat-wrapper/chat-wrapper.component';
 import { SignUpComponent } from './components/sign-up/sign-up.component';
 
@@ -58,7 +58,8 @@ import { SignUpComponent } from './components/sign-up/sign-up.component';
 
   ],
   providers: [AuthService,
-              ChatService],
+              ChatService,
+              ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -7,6 +7,7 @@ export const environment = {
     storageBucket: "chat-app-f41e1.appspot.com",
     messagingSenderId: "503517607613",
     appId: "1:503517607613:web:0f4043b77a2db2d1b2a9d4",
-    measurementId: "G-2F0FYXMGP4"
+    measurementId: "G-2F0FYXMGP4",
+    databaseURL: "https://chat-app-f41e1-default-rtdb.europe-west1.firebasedatabase.app/" ,
   }
 };

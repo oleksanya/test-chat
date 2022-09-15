@@ -1,18 +1,21 @@
 
-<div class="dialog-wrapper">
+<div class="dialog-wrapper" (click)="clickDialog()">
     <div class="dialog-user-profile">
-        <app-profile></app-profile>
+        <app-profile [userImg]="chatData.img"></app-profile>
     </div>
 
     <div class="dialog-message">
         <h2 class="dialog-name">
-            Alice Freeman
+            {{ chatData.firstName + ' ' + chatData.lastName }} 
         </h2>
 
-        <p class="dialog-text">You are the worst!</p>
+        <div *ngIf="lastMessage">
+            <p class="dialog-text">{{ lastMessage.content }}</p>
+        </div>
+        
     </div>
 
-    <div class="dialog-time">
-        <span class="time">June 12, 2017</span>
+    <div *ngIf="lastMessage" class="dialog-time">
+        <span class="time">{{ lastMessage.created | date: 'HH:mm' }}</span>
     </div>
 </div>

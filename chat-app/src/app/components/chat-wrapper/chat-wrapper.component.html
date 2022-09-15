@@ -1,6 +1,5 @@
 <div class="chat-container">
     <app-sidebar></app-sidebar>
 
-    <app-chat></app-chat>
-
+    <app-chat *ngIf="data | async" [data]="data"></app-chat>
 </div>

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { DatabaseService, Message } from 'src/app/services/database.service';
 
 @Component({
   selector: 'app-message',
@@ -6,10 +8,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./message.component.scss']
 })
 export class MessageComponent implements OnInit {
+  
+  message!: string;
 
-  constructor() { }
+  constructor( private db: DatabaseService
+    ) { 
+
+    }
 
   ngOnInit(): void {
   }
 
 }
+
